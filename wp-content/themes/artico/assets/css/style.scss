@@ -1,0 +1,162 @@
+@import "lib/settings";
+@import "lib/fonts";
+@import "lib/general";
+@import "lib/grid";
+
+$maxWidth: 75rem;
+
+body {
+  background: #285c72; /* Old browsers */
+  background: -moz-linear-gradient(left, #285c72 0%, #242c50 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #285c72 0%, #242c50 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #285c72 0%, #242c50 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#285c72', endColorstr='#242c50', GradientType=1);
+  overflow: hidden;
+}
+p{
+  position: absolute;
+  color: #fff;
+  top: 45px;
+  right: 105px;
+  font-size: 14px;
+  font-weight: 400;
+}
+h1{
+  position: absolute;
+  color: #fff;
+  top: 100px;
+  left: 30px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.icebergSvg {
+  width: 200px;
+  left: 100%;
+  position: absolute;
+  top: calc(50vh - 121px);
+  animation: 100s linear icebergSvg infinite alternate;
+}
+
+.first {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1188b8+0,e0dac3+100 */
+  background: #1188b8; /* Old browsers */
+  background: -moz-linear-gradient(top, #1188b8 0%, #e0dac3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1188b8 0%, #e0dac3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1188b8 0%, #e0dac3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1188b8', endColorstr='#e0dac3', GradientType=0); /* IE6-9 */
+  height: 50vh;
+}
+.last {
+  background: #285c72; /* Old browsers */
+  background: -moz-linear-gradient(left, #285c72 0%, #242c50 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #285c72 0%, #242c50 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #285c72 0%, #242c50 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#285c72', endColorstr='#242c50', GradientType=1); /* IE6-9 */
+
+  height: 50vh;
+}
+.opacity {
+  position: absolute;
+  top: 50vh;
+  background: red;
+  width: 100%;
+  height: 50vh;
+
+  background: #285c72; /* Old browsers */
+  background: -moz-linear-gradient(left, #285c72 0%, #242c50 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #285c72 0%, #242c50 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #285c72 0%, #242c50 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#285c72', endColorstr='#242c50', GradientType=1);
+  opacity: .9;
+}
+.moon {
+  position: absolute;
+  width: 80px;
+  right: 16px;
+  top: 16px
+}
+.Logo-artico{
+  left: 46px;
+  position: absolute;
+  top:30px;
+  width: 40px;
+}
+.submarino {
+  position: absolute;
+  width: 220px;
+  right: -220px;
+  bottom: 16px;
+  animation: 50s linear submarino infinite;
+}
+.ese {
+  animation: 1s linear slidein infinite;
+  transform-origin: center center;
+}
+@keyframes slidein {
+  to {
+    transform: rotatez(360deg)
+  }
+}
+.ice {
+  position: absolute;
+  top: 50vh;
+  margin-top: -139px;
+  animation: 200s linear icebergSvg2 infinite alternate;
+}
+#parabollca {
+  transform-origin: 26px 34px;
+  transform: rotate(96deg) translate(0, 8px);
+  animation: 10s linear parabollca infinite alternate;
+}
+@keyframes parabollca {
+  from{
+    transform-origin: 26px 34px;
+    transform: rotate(96deg) translate(0, 8px);
+  }
+  to {
+    transform-origin: 26px 34px;
+    transform: rotate(0deg) translate(0, 8px);
+  }
+}
+@keyframes icebergSvg {
+  from{
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes icebergSvg2 {
+  from{
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes submarino {
+  0%{
+    right: -220px;
+  }
+  20%{
+    right: 20%;
+    bottom: 40px;
+  }
+  40%{
+    right: 40%;
+    bottom: 0;
+  }
+  60%{
+    right: 60%;
+    bottom: 40px;
+  }
+  80%{
+    right: 80%;
+    bottom: 30px;
+  }
+  100%{
+    right: 100%;
+    bottom: 0;
+  }
+
+}
